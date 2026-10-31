@@ -1,0 +1,50 @@
+﻿{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "build",
+  "model": "systalyze/deepseek-ai/DeepSeek-V4-Pro-0813",
+  "small_model": "systalyze/zai-org/GLM-5.3-Flash",
+  "mcp": {},
+  "instructions": [
+    "C:\\Users\\Administrator\\Tools\\evil-opencode\\config\\opencode\\AGENTS.md",
+    "C:\\Users\\Administrator\\Tools\\evil-opencode\\config\\opencode\\profile.md"
+  ],
+  "agent": {
+    "build": {
+      "mode": "primary"
+    },
+    "plan": {
+      "mode": "primary"
+    },
+    "review": {
+      "mode": "all"
+    },
+    "general": {
+      "mode": "subagent"
+    },
+    "explore": {
+      "mode": "subagent"
+    },
+    "title": {},
+    "compaction": {}
+  },
+  "provider": {
+    "systalyze": {
+      "name": "Systalyze Relay",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "https://inference.systalyze.com/v1",
+        "apiKey": "YOUR_SYSTALYZE_KEY"
+      },
+      "models": {
+        "zai-org/GLM-5.3": { "name": "GLM-5.3" },
+        "zai-org/GLM-5.3-Flash": { "name": "GLM-5.3-Flash" },
+        "zai-org/GLM-5.2": { "name": "GLM-5.2" },
+        "deepseek-ai/DeepSeek-V4.1-Flash-1017": { "name": "DeepSeek-V4.1-Flash" },
+        "deepseek-ai/DeepSeek-V4-Pro-0813": { "name": "DeepSeek-V4-Pro" },
+        "moonshotai/Kimi-K3": { "name": "Kimi-K3" },
+        "Qwen/Qwen3.8-27B": { "name": "Qwen3.8-27B" }
+      }
+    }
+  }
+}
+

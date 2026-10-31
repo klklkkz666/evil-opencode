@@ -1,0 +1,24 @@
+# binaries — too big for git (100MB hard limit), download from releases instead
+bin/*.exe
+
+# runtime state — never belongs in a repo
+data/
+cache/
+
+# source reference clone of winmin/evil-opencode (has its own .git, exists on GitHub)
+app/
+
+# node deps
+config/opencode/node_modules/
+node_modules/
+
+# REAL config with live API key — use opencode.example.json as template
+config/opencode/opencode.json
+
+# scan / operation artifacts from test runs
+output/
+
+# logs / OS junk
+*.log
+Thumbs.db
+Desktop.ini
